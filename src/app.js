@@ -29,7 +29,7 @@ window.onload = function() {
       Math.random() * domainGenerate.topLavelDomain.length
     );
 
-    var result = `${domainGenerate.pronoun[rundomPronoun]}${domainGenerate.adj[rundomAdj]}${domainGenerate.noun[rundomNoun]}${domainGenerate.topLavelDomain[rundomTopLavelDomain]}`;
-    myDomain.innerHTML = result;
+    var resultList = `<li>${domainGenerate.pronoun[rundomPronoun]}${domainGenerate.adj[rundomAdj]}${domainGenerate.noun[rundomNoun]}${domainGenerate.topLavelDomain[rundomTopLavelDomain]}</li>`;
+    myDomain.innerHTML += resultList;
   });
 };
